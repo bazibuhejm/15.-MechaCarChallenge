@@ -1,0 +1,8 @@
+getwd()
+MechaCarChallenge <-read.csv("/Users/Bazibuhe/Desktop/ku/hw/15. R/MechaCar_mpg.csv")
+head(MechaCarChallenge)
+library(dplyr)
+Linearmodel <-lm(mpg~vehicle_length + vehicle_weight+spoiler_angle+ ground_clearance+AWD,data=MechaCarChallenge)
+summary(Linearmodel)
+options(scipen = 999)
+getwd()
