@@ -6,3 +6,7 @@ Linearmodel <-lm(mpg~vehicle_length + vehicle_weight+spoiler_angle+ ground_clear
 summary(Linearmodel)
 options(scipen = 999)
 getwd()
+#####################    deliverable 2
+Suspension_Coil <-read.csv("/Users/Bazibuhe/Desktop/ku/hw/15. R/Suspension_Coil.csv")
+head(Suspension_Coil)
+summary(Suspension_Coil$PSI)
